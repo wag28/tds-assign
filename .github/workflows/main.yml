@@ -1,0 +1,20 @@
+name: Test Action
+
+on:
+  push:
+    branches:
+      - main  # or any branch you want to trigger the action
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 24f2001428@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+        
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Test Command
+        run: echo "Hello, world!"
